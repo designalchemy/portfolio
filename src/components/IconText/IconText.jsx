@@ -11,6 +11,9 @@ const styles = {
       '& p': {
         'text-decoration': 'underline'
       }
+    },
+    '@media (max-width: 600px)': {
+      'justify-content': 'center'
     }
   },
   icon: {

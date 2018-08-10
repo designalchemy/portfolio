@@ -8,6 +8,7 @@ import IconText from '@components/IconText/IconText'
 import LineBox from '@components/LineBox/LineBox'
 import Portfolio from '@components/Portfolio/Portfolio'
 import Row from '@components/Row/Row'
+import Contact from '@components/Contact/Contact'
 
 import emailIcon from '@assets/email_icon.png'
 import linkedinIcon from '@assets/linkedin_icon.png'
@@ -160,12 +161,7 @@ const HomePage = () => (
     <Block>
       <Row>
         <Span col={6} mobile={12}>
-          <Title text="CONTACT" />
-          <p>EMAIL</p>
-          <input type="email" name="email" />
-          <p>MESSAGE</p>
-          <textarea />
-          <button>SEND MESSAGE</button>
+          <Contact />
         </Span>
         <Span col={6} mobile={12}>
           <Title text="MISC" />

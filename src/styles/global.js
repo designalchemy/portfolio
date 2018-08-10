@@ -21,11 +21,20 @@ const styles = {
       'letter-spacing': 2,
       color: '#484a4c',
       'text-align': 'justify',
-      'word-break': 'break-word'
+      'word-break': 'break-word',
+      '@media (max-width: 600px)': {
+        'text-align': 'center'
+      }
     },
     a: {
       color: 'black',
       'word-break': 'break-all'
+    },
+    h1: {
+      'line-height': 2
+    },
+    h2: {
+      'line-height': 2
     },
     ul: {
       'line-height': 2,
@@ -71,9 +80,11 @@ const styles = {
       'font-weight': 400,
       transition: 'all 0.2s ease-in-out',
       cursor: 'pointer',
-
       '&:hover': {
         background: 'rgba(0,0,0,0.1)'
+      },
+      '@media (max-width: 600px)': {
+        margin: '0 auto'
       }
     },
     '*': {

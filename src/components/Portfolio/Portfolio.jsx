@@ -18,7 +18,7 @@ const styles = {
   },
   rowCell: {
     border: '1px solid black',
-    'min-height': 150,
+    'padding-bottom': '70%',
     position: 'relative',
     display: 'flex',
     'justify-content': 'center',

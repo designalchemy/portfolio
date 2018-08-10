@@ -6,8 +6,6 @@ const grid = [...new Array(13)].map((x, index) => ({
   width: `${index / 12 * 100 - 2}%`
 }))
 
-console.log(grid)
-
 const mobileGrid = grid.reduce((acc, item, index) => {
   acc[`mobile_${index}`] = { ...item, 'padding-bottom': '4%' }
   return acc
@@ -19,8 +17,6 @@ const styles = {
     ...mobileGrid
   }
 }
-
-console.log(styles)
 
 const Span = ({ classes, col, children, mobile }) => {
   return (

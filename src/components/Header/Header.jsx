@@ -57,12 +57,14 @@ const styles = {
     fontSize: 40,
     'font-weight': '700',
     'margin-bottom': 15,
-    'letter-spacing': 1
+    'letter-spacing': 1,
+    'line-height': 1
   },
   role: {
     fontSize: 13,
     'font-weight': '200',
-    'letter-spacing': 5
+    'letter-spacing': 5,
+    'line-height': 1
   }
 }
 
