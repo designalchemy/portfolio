@@ -14,14 +14,14 @@ class Contact extends React.Component {
   submit = async e => {
     e.preventDefault()
     if (this.state.email && this.state.text) {
-      const res = fetch('./mail.php', {
-        method: 'POST',
-        body: JSON.stringify({
-          email: this.state.email,
-          text: this.state.text
-        })
-      })
-      if (res.success) {
+      const res = await fetch(
+        `./mail.php?email=${this.state.email}&text=${this.state.text}`,
+        {
+          method: 'GET'
+        }
+      )
+      const json = await res.json()
+      if (json.success) {
         this.setState({ button: 'THANKS!' })
       } else {
         this.setState({ button: 'ERROR' })

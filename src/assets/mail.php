@@ -1,12 +1,11 @@
 <?php
-	$email       = isset($_POST['email']) ? strip_tags($_POST['email']) : '';
-	$getMessage  = isset($_POST['message']) ? strip_tags($_POST['message']) : '';
+	$email       = isset($_GET['email']) ? strip_tags($_GET['email']) : '';
+	$getMessage  = isset($_GET['text']) ? strip_tags($_GET['text']) : '';
 
 	$to          = 'luke@designalchemy.co.uk';
 	$subject     = 'New Contact Message';
 
 	$message     = 'From: ' . $email . "\r\n" .
-                 'Email: ' . $email . "\r\n" .
 					       'Message: ' . $getMessage;
 
 	$headers     = 'From: ' . $to . "\r\n" .

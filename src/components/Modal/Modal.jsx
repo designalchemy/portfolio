@@ -25,7 +25,10 @@ const styles = {
     padding: 40,
     position: 'relative',
     'flex-direction': 'column',
-    'overflow-x': 'auto'
+    'overflow-x': 'auto',
+    '@media (max-width: 600px)': {
+      padding: 20
+    }
   },
   close: {
     position: 'absolute',
@@ -36,20 +39,34 @@ const styles = {
     cursor: 'pointer'
   },
   slider: {
-    width: '60%',
-    minHeight: '50vh',
+    width: '80%',
+    'padding-bottom': '65%',
+    height: '500px',
+    display: 'flex',
     overflow: 'hidden',
     margin: '0 auto',
-    marginBottom: 40
+    marginBottom: 40,
+    '@media (max-width: 600px)': {
+      width: '100%',
+      'padding-bottom': '80%'
+    }
   },
   leftCol: {
     width: '40%',
     float: 'left',
-    'padding-right': 30
+    'padding-right': 30,
+    '@media (max-width: 600px)': {
+      width: '100%',
+      'margin-bottom': 30,
+      'padding-right': 0
+    }
   },
   rightCol: {
     width: '60%',
-    float: 'left'
+    float: 'left',
+    '@media (max-width: 600px)': {
+      width: '100%'
+    }
   }
 }
 

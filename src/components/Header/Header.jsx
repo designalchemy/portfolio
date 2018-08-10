@@ -14,7 +14,6 @@ const styles = {
     margin: '0 auto',
     display: 'flex',
     padding: '60 20',
-
     '@media (max-width: 600px)': {
       'flex-direction': 'column'
     }
