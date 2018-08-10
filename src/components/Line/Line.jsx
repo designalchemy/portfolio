@@ -7,6 +7,7 @@ const styles = {
     width: '100%',
     'max-width': 1100,
     margin: '0 auto',
+    padding: '0 20',
     height: 1,
     background: '#707070'
   }

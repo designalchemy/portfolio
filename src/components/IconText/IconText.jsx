@@ -15,7 +15,10 @@ const styles = {
   },
   icon: {
     width: 15,
-    'margin-right': 40
+    'margin-right': 40,
+    '@media (max-width: 600px)': {
+      'margin-right': 20
+    }
   }
 }
 

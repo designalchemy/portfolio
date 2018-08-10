@@ -10,6 +10,8 @@ const styles = {
     display: 'flex',
     'justify-content': 'space-between',
     'margin-bottom': 30,
+    'flex-wrap': 'wrap',
+
     '&:last-child': {
       'margin-bottom': 0
     }
@@ -74,7 +76,7 @@ class IconText extends React.Component {
         {data.map((item, index) => (
           <div key={index} className={classes.rowContainer}>
             {item.map((child, childIndex) => (
-              <Span col={3} key={childIndex}>
+              <Span col={3} mobile={6} key={childIndex}>
                 <div
                   className={classes.rowCell}
                   onClick={() => this.openModal(child)}

@@ -13,7 +13,11 @@ const styles = {
     'max-width': 1100,
     margin: '0 auto',
     display: 'flex',
-    padding: '60 20'
+    padding: '60 20',
+
+    '@media (max-width: 600px)': {
+      'flex-direction': 'column'
+    }
   },
   box: {
     'min-width': 130,
@@ -24,7 +28,11 @@ const styles = {
     'border-radius': 3,
     position: 'relative',
     fontSize: 40,
-    'font-weight': '700'
+    'font-weight': '700',
+
+    '@media (max-width: 600px)': {
+      margin: '0 auto 40 auto'
+    }
   },
   l: {
     position: 'absolute',

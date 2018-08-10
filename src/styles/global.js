@@ -9,7 +9,10 @@ const styles = {
     body: {
       'font-family': '"Montserrat", sans-serif',
       background: 'white',
-      'line-height': 1
+      'line-height': 1,
+      '@media (max-width: 600px)': {
+        'text-align': 'center'
+      }
     },
     p: {
       'font-size': 13,

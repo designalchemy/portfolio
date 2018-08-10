@@ -7,6 +7,7 @@ import Span from '@components/Span/Span'
 import IconText from '@components/IconText/IconText'
 import LineBox from '@components/LineBox/LineBox'
 import Portfolio from '@components/Portfolio/Portfolio'
+import Row from '@components/Row/Row'
 
 import emailIcon from '@assets/email_icon.png'
 import linkedinIcon from '@assets/linkedin_icon.png'
@@ -18,13 +19,8 @@ const HomePage = () => (
 
     <Block>
       <Title text="BIOGRAPHY" />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}
-      >
-        <Span col={8.5}>
+      <Row>
+        <Span col={8} mobile={12}>
           <p>
             “Full stack” Javascript developer with over 7 years of commercial
             experience. Extensive front end knowledge including React and other
@@ -35,7 +31,7 @@ const HomePage = () => (
             testing + redux.
           </p>
         </Span>
-        <Span col={3.5} end>
+        <Span col={4} mobile={12}>
           <IconText href="mailto:luke@designalcehmy.co.uk" icon={emailIcon}>
             luke@designalchemy.co.uk
           </IconText>
@@ -49,20 +45,15 @@ const HomePage = () => (
             /designalchemy
           </IconText>
         </Span>
-      </div>
+      </Row>
     </Block>
 
     <Line />
 
     <Block>
       <Title text="EXPERIENCE" />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}
-      >
-        <Span col={6}>
+      <Row>
+        <Span col={6} mobile={12}>
           <LineBox
             title="FULL STACK DEVELOPER"
             subTitle="Korelogic | 2016 - 2 years"
@@ -78,7 +69,7 @@ const HomePage = () => (
             Mobx, Redux, Feathers and more.
           </LineBox>
         </Span>
-        <Span col={6} end>
+        <Span col={6} mobile={12}>
           <LineBox
             title="FRONT END DEVELOPER"
             subTitle="Ffrees | 2014 - 2 years"
@@ -95,20 +86,15 @@ const HomePage = () => (
             marketing team A/B testing with the goal of improving conversion.
           </LineBox>
         </Span>
-      </div>
+      </Row>
     </Block>
 
     <Line />
 
     <Block>
       <Title text="SKILLS" />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}
-      >
-        <Span col={3}>
+      <Row>
+        <Span col={3} mobile={6}>
           <ul>
             <li>HTML</li>
             <li>SCSS / JSS</li>
@@ -116,7 +102,7 @@ const HomePage = () => (
             <li>ES2016+</li>
           </ul>
         </Span>
-        <Span col={3}>
+        <Span col={3} mobile={6}>
           <ul>
             <li>Node</li>
             <li>React</li>
@@ -124,7 +110,7 @@ const HomePage = () => (
             <li>Feathers</li>
           </ul>
         </Span>
-        <Span col={3}>
+        <Span col={3} mobile={6}>
           <ul>
             <li>Mongo / PostgreSQL </li>
             <li>Redux</li>
@@ -132,7 +118,7 @@ const HomePage = () => (
             <li>Mocha / Chai</li>
           </ul>
         </Span>
-        <Span col={3}>
+        <Span col={3} mobile={6}>
           <ul>
             <li>Vue</li>
             <li>Photoshop</li>
@@ -140,7 +126,7 @@ const HomePage = () => (
             <li>AWS</li>
           </ul>
         </Span>
-      </div>
+      </Row>
     </Block>
 
     <Line />
@@ -154,36 +140,26 @@ const HomePage = () => (
 
     <Block>
       <Title text="EDUCATION" />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}
-      >
-        <Span col={6}>
+      <Row>
+        <Span col={6} mobile={12}>
           <ul>
             <li>Sheffield Hallam University | Multimedia technologies</li>
           </ul>
           <p>Bsc 2:1 (hons) - 2009 - 2012</p>
         </Span>
-        <Span col={6}>
+        <Span col={6} mobile={12}>
           <ul>
             <li>Doncaster College | Applied ICT</li>
           </ul>
           <p>HND - AAAA - 2007 - 2009</p>
         </Span>
-      </div>
+      </Row>
     </Block>
     <Line />
 
     <Block>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}
-      >
-        <Span col={6}>
+      <Row>
+        <Span col={6} mobile={12}>
           <Title text="CONTACT" />
           <p>EMAIL</p>
           <input type="email" name="email" />
@@ -191,7 +167,7 @@ const HomePage = () => (
           <textarea />
           <button>SEND MESSAGE</button>
         </Span>
-        <Span col={6}>
+        <Span col={6} mobile={12}>
           <Title text="MISC" />
           <p>
             Outside of programming I have a passion for travelling, hiking,
@@ -202,7 +178,7 @@ const HomePage = () => (
             and my own knowledge.
           </p>
         </Span>
-      </div>
+      </Row>
     </Block>
   </div>
 )
