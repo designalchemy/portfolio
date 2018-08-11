@@ -38,14 +38,20 @@ const styles = {
     'font-weight': 300,
     'font-size': 15,
     marginBottom: 10,
-    'letter-spacing': 5
+    'letter-spacing': 5,
+    '& a': {
+      'text-decoration': 'none',
+      '&:hover': {
+        'text-decoration': 'underline'
+      }
+    }
   }
 }
 
 const LineBox = ({ classes, title, subTitle, children, padBottom }) => (
   <div className={classes.container}>
     <h1 className={classes.h1}>{title}</h1>
-    <h2 className={classes.h2}>{subTitle}</h2>
+    <h2 className={classes.h2} dangerouslySetInnerHTML={{ __html: subTitle }} />
     <p style={{ paddingBottom: `${padBottom ? '20px' : '0'}` }}>{children}</p>
   </div>
 )

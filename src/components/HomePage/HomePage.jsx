@@ -57,7 +57,7 @@ const HomePage = () => (
         <Span col={6} mobile={12}>
           <LineBox
             title="FULL STACK DEVELOPER"
-            subTitle="Korelogic | 2016 - 2 years"
+            subTitle="<a href='https://korelogic.co.uk/'>Korelogic</a> | 2016 - 2 years"
           >
             Lead developer and project manager for 6+ projects, including 2 CMS
             builds (front end, APIs and database), a socket based animated bet
@@ -73,7 +73,7 @@ const HomePage = () => (
         <Span col={6} mobile={12}>
           <LineBox
             title="FRONT END DEVELOPER"
-            subTitle="Ffrees | 2014 - 2 years"
+            subTitle="<a href='https://www.uaccount.uk/'>Ffrees</a> | 2014 - 2 years"
             padBottom
           >
             At Ffrees, I was part of a 2 person team responsible for the design
@@ -81,7 +81,7 @@ const HomePage = () => (
             cross compatibility and responsiveness across all devices and screen
             sizes.
           </LineBox>
-          <LineBox title="WEB DEVELOPER" subTitle="Plusnet | 2012 - 2 years">
+          <LineBox title="WEB DEVELOPER" subTitle="<a href='https://www.plus.net'>Plusnet</a> | 2012 - 2 years">
             Part of a 12 dev front end team responsible for maintaining, bug
             fixing and new updates to the Plusnet site. Working closely with the
             marketing team A/B testing with the goal of improving conversion.
