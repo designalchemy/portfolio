@@ -18,12 +18,16 @@ const styles = {
   },
   rowCell: {
     border: '1px solid black',
-    'padding-bottom': '70%',
+    height: '17vw',
     position: 'relative',
     display: 'flex',
     'justify-content': 'center',
     'align-items': 'center',
     cursor: 'pointer',
+
+    '@media (max-width: 600px)': {
+      height: '30vw'
+    },
 
     '&:hover': {
       '& p': {
@@ -45,7 +49,8 @@ const styles = {
       background: 'rgba(255,255,255,0.8)',
       padding: '0 5',
       opacity: 0,
-      transition: 'all 0.2s ease-in-out'
+      transition: 'all 0.2s ease-in-out',
+      'text-align': 'center'
     }
   }
 }
