@@ -14,6 +14,15 @@ const styles = {
         'text-align': 'center'
       }
     },
+    '.slick-slide': {
+      height: 'auto'
+    },
+    '.slick-prev:before': {
+      color: 'black'
+    },
+    '.slick-next:before': {
+      color: 'black'
+    },
     p: {
       'font-size': 13,
       'font-weight': 400,

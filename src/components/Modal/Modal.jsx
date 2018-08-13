@@ -2,7 +2,7 @@ import React from 'react'
 import injectSheet from 'react-jss'
 import PropTypes from 'prop-types'
 import Title from '@components/Title/Title'
-import Carousel from 'nuka-carousel'
+import Slider from 'react-slick'
 
 const styles = {
   container: {
@@ -19,13 +19,16 @@ const styles = {
   },
   body: {
     background: 'white',
-    'max-height': '80vh',
+    height: '80vh',
     width: '80vw',
-    display: 'flex',
+    position: 'relative'
+  },
+  bodyContainer: {
+    position: 'absolute',
     padding: 40,
-    position: 'relative',
-    'flex-direction': 'column',
     'overflow-x': 'auto',
+    width: '100%',
+    height: '100%',
     '@media (max-width: 600px)': {
       padding: 20
     }
@@ -36,19 +39,21 @@ const styles = {
     right: 30,
     'font-size': 25,
     'font-weight': 800,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    zIndex: 10,
+    background: 'white',
+    padding: '5px 8px',
+    '@media (max-width: 600px)': {
+      top: 10,
+      right: 10
+    }
   },
   slider: {
     width: '80%',
-    'padding-bottom': '65%',
-    height: '500px',
-    display: 'flex',
-    overflow: 'hidden',
     margin: '0 auto',
     marginBottom: 40,
-    '@media (max-width: 600px)': {
-      width: '100%',
-      'padding-bottom': '80%'
+    '& img ': {
+      width: '100%'
     }
   },
   leftCol: {
@@ -70,40 +75,45 @@ const styles = {
   }
 }
 
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  autoplay: true
+}
+
 const Modal = ({ classes, closeModal, data }) => (
   <div className={classes.container}>
     <div className={classes.body}>
       <div className={classes.close} onClick={closeModal}>
         X
       </div>
-      <Title text={data.title} />
-      <div className={classes.slider}>
-        <Carousel autoplay wrapAround>
-          {data.images.map((item, index) => (
-            <img
-              key={index}
-              src={item}
-              onLoad={() => {
-                window.dispatchEvent(new Event('resize')) // hack for load height
-              }}
-            />
-          ))}
-        </Carousel>
-      </div>
-      <div>
-        <div className={classes.leftCol}>
-          {data.websit && (
-            <p>
-              Site: <a href={data.website}>{data.website}</a>
-            </p>
-          )}
-          <p>Role: {data.role}</p>
-          <p>Tech: {data.tech}</p>
+      <div className={classes.bodyContainer}>
+        <Title text={data.title} />
+        <div className={classes.slider}>
+          <Slider {...settings}>
+            {data.images.map((item, index) => (
+              <div key={index}>
+                <img src={item} />
+              </div>
+            ))}
+          </Slider>
         </div>
-        <div
-          className={classes.rightCol}
-          dangerouslySetInnerHTML={{ __html: data.bio }}
-        />
+        <div>
+          <div className={classes.leftCol}>
+            {data.websit && (
+              <p>
+                Site: <a href={data.website}>{data.website}</a>
+              </p>
+            )}
+            <p>Role: {data.role}</p>
+            <p>Tech: {data.tech}</p>
+          </div>
+          <div
+            className={classes.rightCol}
+            dangerouslySetInnerHTML={{ __html: data.bio }}
+          />
+        </div>
       </div>
     </div>
   </div>
