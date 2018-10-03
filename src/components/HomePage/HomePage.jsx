@@ -75,7 +75,7 @@ const HomePage = () => (
           <LineBox
             title="CONTRACT FRONT END DEVELOPER"
             subTitle="<a href='https://www.theblackeyeproject.co.uk/'>The Black Eye Project</a>"
-            time="2014 - 6 Months"
+            time="2016 - 6 Months"
           >
             Working closely with the designers at The Black Eye Porject i would
             turn PSD's into fully responsive websites and intergrate into a CMS
