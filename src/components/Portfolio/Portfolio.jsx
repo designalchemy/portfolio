@@ -19,6 +19,7 @@ const styles = {
   rowCell: {
     border: '1px solid black',
     height: '17vw',
+    'max-height': '170px',
     position: 'relative',
     display: 'flex',
     'justify-content': 'center',

@@ -57,7 +57,9 @@ const HomePage = () => (
         <Span col={6} mobile={12}>
           <LineBox
             title="FULL STACK DEVELOPER"
-            subTitle="<a href='https://korelogic.co.uk/'>Korelogic</a> | 2016 - 2 years"
+            subTitle="<a href='https://korelogic.co.uk/'>Korelogic</a>"
+            time="2016 - 2 years"
+            padBottom
           >
             Lead developer and project manager for 6+ projects, including 2 CMS
             builds (front end, APIs and database), a socket based animated bet
@@ -67,13 +69,25 @@ const HomePage = () => (
             distributing work between myself and other developers, ensuring a
             high quality product was always delivered within budget, on schedule
             and to the specification. Tech stack included React, Node, Express,
-            Mobx, Redux, Feathers and more.
+            Mobx, Redux, Feathers and more. Testable quality code that is easy
+            for other developers to work on was paramount here.
+          </LineBox>
+          <LineBox
+            title="CONTRACT FRONT END DEVELOPER"
+            subTitle="<a href='https://www.theblackeyeproject.co.uk/'>The Black Eye Project</a>"
+            time="2014 - 6 Months"
+          >
+            Working closely with the designers at The Black Eye Porject i would
+            turn PSD's into fully responsive websites and intergrate into a CMS
+            for full customizability. Given total freedom over technology and a
+            large role in the animaions and UX of the sites.
           </LineBox>
         </Span>
         <Span col={6} mobile={12}>
           <LineBox
             title="FRONT END DEVELOPER"
-            subTitle="<a href='https://www.uaccount.uk/'>Ffrees</a> | 2014 - 2 years"
+            subTitle="<a href='https://www.uaccount.uk/'>Ffrees</a>"
+            time="2014 - 2 years"
             padBottom
           >
             At Ffrees, I was part of a 2 person team responsible for the design
@@ -81,10 +95,23 @@ const HomePage = () => (
             cross compatibility and responsiveness across all devices and screen
             sizes.
           </LineBox>
-          <LineBox title="WEB DEVELOPER" subTitle="<a href='https://www.plus.net'>Plusnet</a> | 2012 - 2 years">
+          <LineBox
+            title="WEB DEVELOPER"
+            subTitle="<a href='https://www.plus.net'>Plusnet</a>"
+            time="2012 - 2 years"
+            padBottom
+          >
             Part of a 12 dev front end team responsible for maintaining, bug
             fixing and new updates to the Plusnet site. Working closely with the
             marketing team A/B testing with the goal of improving conversion.
+          </LineBox>
+          <LineBox
+            title="JUNIOR WEB DEVELOPER"
+            subTitle="<a href='https://www.brit.net'>Britnet</a>"
+            time="2011 - 1 years"
+          >
+            While at University i did a few days a week at Britnet, this was CMS
+            based web design with a small ammount coding.
           </LineBox>
         </Span>
       </Row>

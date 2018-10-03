@@ -35,9 +35,9 @@ const styles = {
     'letter-spacing': 5
   },
   h2: {
-    'font-weight': 300,
+    'font-weight': 400,
     'font-size': 15,
-    marginBottom: 10,
+    marginBottom: 5,
     'letter-spacing': 5,
     '& a': {
       'text-decoration': 'none',
@@ -45,13 +45,21 @@ const styles = {
         'text-decoration': 'underline'
       }
     }
+  },
+  h3: {
+    'font-weight': 300,
+    'font-size': 15,
+    marginBottom: 20,
+    'letter-spacing': 5
   }
 }
 
-const LineBox = ({ classes, title, subTitle, children, padBottom }) => (
+const LineBox = ({ classes, title, subTitle, children, padBottom, time }) => (
   <div className={classes.container}>
     <h1 className={classes.h1}>{title}</h1>
     <h2 className={classes.h2} dangerouslySetInnerHTML={{ __html: subTitle }} />
+    <h3 className={classes.h3} dangerouslySetInnerHTML={{ __html: time }} />
+
     <p style={{ paddingBottom: `${padBottom ? '20px' : '0'}` }}>{children}</p>
   </div>
 )
@@ -64,7 +72,8 @@ LineBox.propTypes = {
   ]),
   title: PropTypes.string,
   subTitle: PropTypes.string,
-  padBottom: PropTypes.bool
+  padBottom: PropTypes.bool,
+  time: PropTypes.string
 }
 
 export default injectSheet(styles)(LineBox)
