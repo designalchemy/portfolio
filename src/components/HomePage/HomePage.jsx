@@ -56,13 +56,13 @@ const HomePage = () => (
       <Row>
         <Span col={6} mobile={12}>
           <LineBox
-            title="FULL STACK DEVELOPER"
+            title="SENIOR JAVASCRIPT DEVELOPER"
             subTitle="<a href='https://korelogic.co.uk/'>Korelogic</a>"
             time="2016 - 2 years"
             padBottom
           >
             Lead developer and project manager for 6+ projects, including 2 CMS
-            builds (front end, APIs and database), a socket based animated bet
+            builds (front end, APIs and database), a socket based animated sports
             tipping display, canvas to video horse betting tips videos, a
             language translation application and a IP/hardware authentication
             system. Liaising with the customer I would spec out projects,

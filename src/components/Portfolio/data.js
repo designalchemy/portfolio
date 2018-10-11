@@ -57,8 +57,9 @@ const data = [
       tech: 'React, Mobx, Webpack, HTML, SCSS, JS',
       bio:
         '<p>Tipster predictor is a animated display looping over the 40+ races for the day and display horses correctly weighted by winner.</p><p>This can be customized by providing multiple URL flags which will filter races, change logos and more.</p><p>This product is regularly shown at the Royal Ascott in view of 100k+ customers. </p>'
-    },
-
+    }
+  ],
+  [
     {
       title: 'Tipster Video',
       cover: tipsterVideo.index,
@@ -68,9 +69,7 @@ const data = [
       tech: 'React, Mobx, Canvas, Ffmpeg, Webpack, HTML, SCSS, JS, S3, AWS',
       bio:
         '<p>Tipster video was a project that turns code into video. The first task was to a create a canvas based animation and then convert this canvas object into a webm video. </p><p>This process was automated generating 40 videos a day and syncing Amazon polly auto to give the impression of a speaking character. The video were then transcoded to the correct format and displayed in a CMS for customers to consume.</p>'
-    }
-  ],
-  [
+    },
     {
       title: 'Tipster Translations',
       cover: tipsterTranslation.index,
@@ -96,8 +95,9 @@ const data = [
       tech: 'React, Mobx, Webpack, HTML, SCSS, JS',
       bio:
         '<p>During my time at Korelogic, Mybet was one of the clients we worked for. Mybet is a large sports book serving the European market.</p><p>My role with in this project was largely bug fixing, but also responsible for integrating some new features, widgets and editing the CMS.</p><p>The tech stack was react front end with mobx state management. The APIs and data was provided by a 3rd party company and we used a web socket connection to keep all the stats accurate.</p>'
-    },
-
+    }
+  ],
+  [
     {
       title: 'Plusnet',
       cover: plusnet.index,
@@ -118,9 +118,7 @@ const data = [
       tech: 'HTML, CSS, jQuery, Laravel',
       bio:
         '<p>At Ffrees i was part of the front end development team. Our main project was the front end build of a online banking system.</p> <p>This involved creating HTML pages with AJAX JSON API responses, with a lot of javascript to create a interactive experience. The backend was build in Phalcon PHP and we used a Restful API methodology.</p><p>I was working with the lead designer but had a lot of creative freedom in the designing and development of the pages. The team worked in a Agile environment with bi weekly sprints.</p>'
-    }
-  ],
-  [
+    },
     {
       title: 'Uk Tax',
       cover: uktax.index,
@@ -130,12 +128,13 @@ const data = [
       tech: 'React, Redux, Webpack, HTML, SCSS, JS',
       bio:
         '<p>Tax calc was a simple build using React and Redux as the main technologies. The main challenge here was to ensure all the rules involving the UK tax laws were being applied correctly at the different threshold.</p><p>Built in React with Redux for state management, meaning the render and calculations are super fast allowing for a smooth UI and easy management of data internally.</p>'
-    },
-
+    }
+  ],
+  [
     {
       title: 'La Fiesta',
       cover: lafiesta.index,
-      images: [lafiesta['1'], lafiesta['2'], lafiesta['3'], lafiesta['4']],
+      images: [lafiesta['5'], lafiesta['6']],
       website: 'https://www.lafiestadoncaster.uk/',
       role: 'Designer + developer',
       tech: 'HTML, CSS, JS, Wordpress',

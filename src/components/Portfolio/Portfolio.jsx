@@ -17,9 +17,8 @@ const styles = {
     }
   },
   rowCell: {
-    border: '1px solid black',
-    height: '17vw',
-    'max-height': '170px',
+    // height: '17vw',
+    // 'max-height': '170px',
     position: 'relative',
     display: 'flex',
     'justify-content': 'center',
@@ -27,7 +26,7 @@ const styles = {
     cursor: 'pointer',
 
     '@media (max-width: 600px)': {
-      height: '30vw'
+      // height: '30vw'
     },
 
     '&:hover': {
@@ -37,17 +36,16 @@ const styles = {
     },
 
     '& img': {
-      position: 'absolute',
-      top: 0,
-      left: 0,
+      maxWidth: '100%',
+      maxHeight: '100%',
       width: '100%',
-      height: '100%'
+      outline: '1px solid #d0d0d0'
     },
 
     '& p': {
       'z-index': 1,
       position: 'absolute',
-      background: 'rgba(255,255,255,0.8)',
+      background: 'rgba(255, 255, 255, 0.8)',
       padding: '0 5',
       opacity: 0,
       transition: 'all 0.2s ease-in-out',
@@ -82,7 +80,7 @@ class IconText extends React.Component {
         {data.map((item, index) => (
           <div key={index} className={classes.rowContainer}>
             {item.map((child, childIndex) => (
-              <Span col={3} mobile={6} key={childIndex}>
+              <Span col={4} mobile={12} key={childIndex}>
                 <div
                   className={classes.rowCell}
                   onClick={() => this.openModal(child)}
