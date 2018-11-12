@@ -17,8 +17,6 @@ const styles = {
     }
   },
   rowCell: {
-    // height: '17vw',
-    // 'max-height': '170px',
     position: 'relative',
     display: 'flex',
     'justify-content': 'center',
@@ -78,7 +76,7 @@ class IconText extends React.Component {
     return (
       <div>
         {data.map((item, index) => (
-          <div key={index} className={classes.rowContainer}>
+          <div className={classes.rowContainer} key={index}>
             {item.map((child, childIndex) => (
               <Span col={4} mobile={12} key={childIndex}>
                 <div

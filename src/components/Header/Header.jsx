@@ -6,7 +6,7 @@ import bg from '@assets/header_bg.jpg'
 const styles = {
   container: {
     background: `url(${bg})`,
-    'background-size': 'auto 150%',
+    'background-size': '140vw 45vw',
     'background-position': 'top left',
     '@media (max-width: 600px)': {
       'background-size': 'auto 150%'

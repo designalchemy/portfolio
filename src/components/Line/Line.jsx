@@ -9,9 +9,7 @@ const styles = {
     margin: '0 auto',
     padding: '0 20',
     height: 1,
-    background: '#707070',
-    position: 'relative',
-    top: 1
+    background: '#707070'
   }
 }
 

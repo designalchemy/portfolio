@@ -53,6 +53,7 @@ const HomePage = () => (
 
     <Block>
       <Title text="EXPERIENCE" />
+
       <Row>
         <Span col={6} mobile={12}>
           <LineBox
@@ -62,8 +63,8 @@ const HomePage = () => (
             padBottom
           >
             Lead developer and project manager for 6+ projects, including 2 CMS
-            builds (front end, APIs and database), a socket based animated sports
-            tipping display, canvas to video horse betting tips videos, a
+            builds (front end, APIs and database), a socket based animated
+            sports tipping display, canvas to video horse betting tips videos, a
             language translation application and a IP/hardware authentication
             system. Liaising with the customer I would spec out projects,
             distributing work between myself and other developers, ensuring a
@@ -72,6 +73,7 @@ const HomePage = () => (
             Mobx, Redux, Feathers and more. Testable quality code that is easy
             for other developers to work on was paramount here.
           </LineBox>
+
           <LineBox
             title="CONTRACT FRONT END DEVELOPER"
             subTitle="<a href='https://www.theblackeyeproject.co.uk/'>The Black Eye Project</a>"
@@ -83,6 +85,7 @@ const HomePage = () => (
             large role in the animaions and UX of the sites.
           </LineBox>
         </Span>
+
         <Span col={6} mobile={12}>
           <LineBox
             title="FRONT END DEVELOPER"
@@ -95,6 +98,7 @@ const HomePage = () => (
             cross compatibility and responsiveness across all devices and screen
             sizes.
           </LineBox>
+
           <LineBox
             title="WEB DEVELOPER"
             subTitle="<a href='https://www.plus.net'>Plusnet</a>"
@@ -105,6 +109,7 @@ const HomePage = () => (
             fixing and new updates to the Plusnet site. Working closely with the
             marketing team A/B testing with the goal of improving conversion.
           </LineBox>
+
           <LineBox
             title="JUNIOR WEB DEVELOPER"
             subTitle="<a href='https://www.brit.net'>Britnet</a>"
@@ -121,6 +126,7 @@ const HomePage = () => (
 
     <Block>
       <Title text="SKILLS" />
+
       <Row>
         <Span col={3} mobile={6}>
           <ul>
@@ -161,6 +167,7 @@ const HomePage = () => (
 
     <Block>
       <Title text="PORTFOLIO" />
+
       <Portfolio />
     </Block>
 
@@ -168,6 +175,7 @@ const HomePage = () => (
 
     <Block>
       <Title text="EDUCATION" />
+
       <Row>
         <Span col={6} mobile={12}>
           <ul>
@@ -183,6 +191,7 @@ const HomePage = () => (
         </Span>
       </Row>
     </Block>
+
     <Line />
 
     <Block>
